@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Bai3/Bai3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 anh1">
+                <img src="../Bai3/anh1.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 anh2">
+                <img src="../Bai3/anh2.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 anh3">
+                <img src="../Bai3/anh3.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-12 anh4">
+                <img src="../Bai3/anh4.jpg" class="img-fluid" alt="...">
+            </div>
+        </div>
+
+        <div class="row row1">
+            <div class="col-3 anh_1">
+                <img src="../Bai3/anh1.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-3 anh_2">
+                <img src="../Bai3/anh2.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-3 anh_3">
+                <img src="../Bai3/anh3.jpg" class="img-fluid" alt="...">
+            </div>
+            <div class="col-3 anh_4">
+                <img src="../Bai3/anh4.jpg" class="img-fluid" alt="...">
+            </div>
+        </div>
+        
+    </div>
+
+
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+      <script>
+          $(document).ready(function () {
+              $(".anh_1").click(function(){
+                $(".anh_1").css("border","2px solid red");
+                $(".anh_2").css("border","none");
+                $(".anh_3").css("border","none");
+                $(".anh_4").css("border","none");
+                $(".anh1").fadeIn();
+                $(".anh2").hide();
+                $(".anh3").hide();
+                $(".anh4").hide();
+
+              });
+              $(".anh_2").click(function(){
+                $(".anh_2").css("border","2px solid red");
+                $(".anh_1").css("border","none");
+                $(".anh_3").css("border","none");
+                $(".anh_4").css("border","none");
+                $(".anh2").fadeIn();
+                $(".anh1").hide();
+                $(".anh3").hide();
+                $(".anh4").hide();
+
+              });
+              $(".anh_3").click(function(){
+                $(".anh_3").css("border","2px solid red");
+                $(".anh_2").css("border","none");
+                $(".anh_1").css("border","none");
+                $(".anh_4").css("border","none");
+                $(".anh3").fadeIn();
+                $(".anh2").hide();
+                $(".anh1").hide();
+                $(".anh4").hide();
+
+              });
+              $(".anh_4").click(function(){
+                $(".anh_4").css("border","2px solid red");
+                $(".anh_2").css("border","none");
+                $(".anh_3").css("border","none");
+                $(".anh_1").css("border","none");
+                $(".anh4").fadeIn();
+                $(".anh2").hide();
+                $(".anh3").hide();
+                $(".anh1").hide();
+
+              });
+          });
+      </script>
+      
+</body>
+</html>
